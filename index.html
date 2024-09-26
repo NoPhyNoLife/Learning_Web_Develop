@@ -1,0 +1,121 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牢岑的网站</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script>
+        $(document).ready(function() {
+            // Google Analytics API endpoint (replace with your own)
+            var apiUrl = 'https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A123456789&metrics=ga%3Asessions&dimensions=ga%3Adate&start-date=30daysAgo&end-date=today';
+
+            // Make an AJAX request to fetch data
+            $.ajax({
+                url: apiUrl,
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer YOUR_ACCESS_TOKEN' // Replace with your access token or implement OAuth2 authentication
+                },
+                success: function(response) {
+                    // Parse response to get the total sessions for the current month
+                    var totalSessions = response.totalsForAllResults['ga:sessions'];
+                    // Display the visitor count in the footer
+                    $('#visitor-count').text('本月共有 ' + totalSessions + ' 人次访问此页面');
+                },
+                error: function(err) {
+                    console.error('Error fetching visitor data:', err);
+                }
+            });
+        });
+    </script> -->
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>欢迎来到牢岑的个人网站！</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">网站简介</a></li>
+                <li><a href="#portfolio">新世纪AI逆天行为大赏</a></li>
+                <li><a href="#msboard">留言板</a></li>
+                <li><a href="contact.html">加好友</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home">
+    <div class="container">
+        <h2>网站简介</h2>
+        <p class="indtxt">欢迎来到牢岑写的网站&excl; 你可以在这里观赏新时代AI逆天言论&comma; 也可以给我留言！( ・ω・)</p>
+        <p class="indtxt">未来我们可能更新AI使用新手教程、ChatGPT实装等更多功能&comma; 敬请期待&excl;</p>
+        <p class="indtxt">由于这是我的第一个网站，有任何建议都可以通过“留言板”告诉我！你也可以尝试添加作者的微信好友哦～[狗头]</p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>新世纪AI逆天行为大赏</h2>
+        <p class="indtxt">这里有往期AI炸裂言论大合集!走过路过不要错过!</p> 
+        <div class="gallery">
+            <img src="images/portfolio1.jpg" class="center" width="400">
+            <figcaption class="title1">图一&colon; AI八大姨与赛博羊肉串的爱情故事</figcaption><br>
+            <img src="images/portfolio2.jpg" class="center" width="400">
+            <figcaption class="title1">图二&colon; 小小猫娘</figcaption><br>
+            <img src="images/portfolio3.jpg" class="center" width="400">
+            <figcaption class="title1">图三&colon; AI玉玉症文案</figcaption><br>
+            <img src="images/portfolio4.jpg" class="center" width="400">
+            <figcaption class="title1">图四&colon; 正经快照&comma; 使用AI进行提示词编写</figcaption><br>
+        </div>
+    </div>
+</section>
+
+<section id="msboard">
+    <div class="container">
+        <h2>留言板</h2>
+        <form id="contact-form" action="/form.php" method="post">
+            <input type="text" id="name" name="name" placeholder="留言人昵称" required><br>
+            <input type="text" id="email" name="email" placeholder="你的联系方式（选填）"><br>
+            <textarea id="message" name="message" placeholder="说点什么......" required></textarea><br>
+            <button type="submit">发送</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 My Personal Website</p>
+        <p>Follow me on <a href="https://github.com/NoPhyNoLife">GitHub</a> .其实上面还什么都没有&excl; XD </p>
+        <p id="visitor-count">Loading visitor count...</p>
+    </div>
+</footer>
+
+<!-- Script for Chatbot API integration -->
+<!--
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Example of Chatbot API integration (replace with your API endpoint)
+        $.ajax({
+            url: 'https://your-chatbot-api-endpoint',
+            method: 'GET',
+            success: function(response) {
+                // Handle response from Chatbot API
+                console.log(response);
+            },
+            error: function(err) {
+                // Handle errors
+                console.error('Error fetching Chatbot data:', err);
+            }
+        });
+    });
+</script>
+-->
+</body>
+</html>
